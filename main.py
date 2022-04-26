@@ -1,4 +1,9 @@
+from operator import truediv
 from src.app import app
 
+HOST='localhost'
+PORT=4000
+DEBUG=True
+
 if __name__ == '__main__':
-    app.run(debug=False, port=8080)
+    app.run(HOST, PORT, DEBUG)
